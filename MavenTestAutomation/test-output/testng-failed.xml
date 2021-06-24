@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Roche Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.htc.qa.reporting.ExtentReporter"/>
+    <listener class-name="com.htc.qa.reporting.ReportListener"/>
+  </listeners>
+  <test thread-count="5" name="RocheLoginTest(failed)">
+    <parameter name="bType" value="chrome"/>
+    <parameter name="fileName" value="eportal/EportalTestData.csv"/>
+    <parameter name="startRow" value="1"/>
+    <parameter name="endRow" value="1"/>
+    <parameter name="url" value="https://remoteaccess.roche.net/index.html"/>
+    <classes>
+      <class name="com.htc.features.RocheLoginTest">
+        <methods>
+          <include name="beforeMethodSetup"/>
+          <include name="initializeBrowser"/>
+          <include name="Login" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.htc.features.RocheLoginTest -->
+    </classes>
+  </test> <!-- RocheLoginTest(failed) -->
+</suite> <!-- Failed suite [Roche Suite] -->

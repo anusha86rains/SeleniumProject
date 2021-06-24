@@ -1,0 +1,7 @@
+2021-05-31 22:28:14 INFO - [com.htc.qa.reporting.ReportListener.onStart] The current test environment PRD
+2021-05-31 22:28:14 INFO - [com.htc.qa.ui.BaseTestUi.initializeBrowser] Initializing before class objects
+2021-05-31 22:28:15 INFO - [com.htc.qa.ui.Browser.createDriver] Using local WebDriver instance: chrome
+2021-05-31 22:28:16 INFO - [com.htc.qa.ui.PageObjects.initializeWait] initialising wait
+2021-05-31 22:28:19 INFO - [com.htc.qa.reporting.ReportListener.onTestStart] Started Test: Login
+2021-05-31 22:28:19 INFO - [com.htc.features.RocheLoginTest.Login] Validate Ecommerce Site After Login
+2021-05-31 22:28:19 INFO - [com.htc.qa.ui.PageObjects.initializeWait] initialising wait

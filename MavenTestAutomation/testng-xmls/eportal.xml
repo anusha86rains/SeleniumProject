@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Roche Suite" preserve-order="true">
+	<test name='RocheLoginTest'>
+		<parameter name="bType" value="chrome" />	
+		<parameter name="fileName"
+			value="eportal/EportalTestData.csv" />
+	  <parameter name="url"
+			value="https://remoteaccess.roche.net/index.html" />  
+		<parameter name="startRow" value="1" />
+		<parameter name="endRow" value="1" />
+		<classes>
+			<class name="com.htc.features.RocheLoginTest" />
+		</classes>
+	</test>
+
+	<listeners>
+		<listener class-name="com.htc.qa.reporting.ExtentReporter" />
+		<listener class-name="com.htc.qa.reporting.ReportListener" />
+	</listeners>
+</suite>
